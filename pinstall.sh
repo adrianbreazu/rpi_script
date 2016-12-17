@@ -38,6 +38,7 @@ libsqlite3-dev
 build-essential
 nodejs
 npm
+nginx
 "
 sudo apt-get install --yes -f install
 sudo apt-get install --yes $apps_to_be_installed
@@ -61,7 +62,7 @@ sudo pip install --upgrade pip
 sudo pip3 install --upgrade pip
 echo "--- install pip and pip3 packages ---"
 sudo pip install flask virtualenv RPi.GPIO
-sudo pip3 install django flask virtualenv RPi.GPIO
+sudo pip3 install django flask virtualenv RPi.GPIO gunicorn
 
 
 # make folders
