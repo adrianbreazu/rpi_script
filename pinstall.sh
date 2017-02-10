@@ -39,8 +39,8 @@ build-essential
 nodejs
 npm
 nginx
+python3
 "
-sudo apt-get install --yes -f install
 sudo apt-get install --yes $apps_to_be_installed
 
 
