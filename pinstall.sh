@@ -7,7 +7,7 @@ read isconfigured
 
 
 if [$isconfigured = "N"]
-	then 
+	then
     sudo raspi-config
 fi
 
@@ -28,20 +28,22 @@ apps_to_be_installed="
 git
 vim
 mc
-apache2
-libapache2-mod-wsgi
-libpq-dev
-postgresql
-postgresql-contrib
 sqlite3
 libsqlite3-dev
 build-essential
-nodejs
-npm
 nginx
 python3
 "
+additional_apps="
+libpq-dev
+apache2
+libapache2-mod-wsgi
+postgresql
+postgresql-contrib
+nodejs
+npm"
 sudo apt-get install --yes $apps_to_be_installed
+#sudo apt-get install --yes $additional_apps
 
 
 ## install python apps
